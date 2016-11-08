@@ -23,7 +23,7 @@ complete. Feel free to fork or contribute ;-)
 First of all you should backup your current vim setup, in case you do not like what
  I did.
 
-After that just copy the .vimrc file and install the [vundle](https://github.com/VundleVim/Vundle.vim) plugin manager:
+After that just copy the `.vimrc` file and install the [vundle](https://github.com/VundleVim/Vundle.vim) plugin manager:
 ```bash
 $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
@@ -36,7 +36,19 @@ This will fetch all the needed plugins from github and activate them properly.
 Do not forget to read the install procedure for the [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) plugin
 and configure it for all the languages you might want it for.
 
-Finally copy the .ctags file to your home directory. There is a [list of more 
+Finally copy the `.ctags` file to your home directory. There is a [list of more 
 languages for ctags support](https://github.com/majutsushi/tagbar/wiki) in the wiki of tagbar.
 
-In the colors subdirectory you can find my preferred colorscheme, [jelly-beans](https://github.com/nanotech/jellybeans.vim).
+In the `colors` subdirectory you can find my preferred colorscheme, [jelly-beans](https://github.com/nanotech/jellybeans.vim).
+
+## Some Key mappings
+
+`SPACE` folds and unfolds code based on indendation.
+
+`F3` toggles line numbering.
+
+`F4` opens and closes [NERDTree](https://github.com/scrooloose/nerdtree), a file manager.
+
+`F8` opens and closes the tagbar
+
+The keys for movement between different windows splits are remapped from `CTRL``W``direction` to `CTRL``direction`, the directions being the standard vim direction keys `h,j,k,l`.
