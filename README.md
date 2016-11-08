@@ -2,10 +2,10 @@
 
 ## What is it good for?
 
-This is my setup for working within a devops group, that takes care of a
+This is my setup for working within a devops group, taking care of a
 heavily distributed system, consisting of a lot of python code, namely
 openstack components, managed by puppet, orchestrated by ansible, you get
-the idea;-)
+the idea ;-)
 
 ## How the thing was born
 
@@ -16,7 +16,7 @@ found some rudimentary ansible support, so I decided to complement the python
 setup with some vim plugins for puppet and ansible.
 
 I think so far it works pretty well, at least for me, despite being far from
-complete. Feel free to forl or contribute ;-)
+complete. Feel free to fork or contribute ;-)
 
 ## How to get started
 
@@ -39,4 +39,4 @@ and configure it for all the languages you might want it for.
 Finally copy the .ctags file to your home directory. There is a [list of more 
 languages for ctags support](https://github.com/majutsushi/tagbar/wiki) in the wiki of tagbar.
 
-n the colors subdirectory you can find my preferred colorscheme, [jelly-beans](https://github.com/nanotech/jellybeans.vim).
+In the colors subdirectory you can find my preferred colorscheme, [jelly-beans](https://github.com/nanotech/jellybeans.vim).
