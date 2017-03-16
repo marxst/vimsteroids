@@ -1,5 +1,5 @@
-set nocompatible              " required
-filetype off                  " required
+set nocompatible
+filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -14,13 +14,17 @@ Plugin 'gmarik/Vundle.vim'
 " Add all your plugins here (note older versions of Vundle used Bundle
 " instead of Plugin)
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-scripts/indentpython.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
@@ -29,14 +33,17 @@ Plugin 'godlygeek/tabular'
 Plugin 'puppetlabs/puppet-syntax-vim'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'elzr/vim-json'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+call vundle#end()
+colorscheme jellybeans
 nnoremap <F3> :set invnumber<CR>
 " mark unnecessary whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.yml,*.yaml,*.pp match BadWhitespace /\s\+$/
-
+let mapleader = ','
 set cursorcolumn
 set cursorline
 set colorcolumn=80
@@ -47,7 +54,6 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 set laststatus=2
 
-syntax on
 filetype plugin indent on
 
 set splitbelow
@@ -124,4 +130,3 @@ let g:tagbar_type_ansible = {
     \ 'k:tasks'
   \]
 \}
-colorscheme jellybeans
